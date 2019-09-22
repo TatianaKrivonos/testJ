@@ -32,7 +32,7 @@ function styles() {
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer({browsers: ['last 2 version'], grid: true}),
+      autoprefixer({grid: true}),
     ]))
     .pipe(sourcemaps.write('/'))
     .pipe(dest(`${dir.build}css`))
