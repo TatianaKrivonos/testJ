@@ -31,6 +31,117 @@
     </div>
   </header>
   <main>
+    <h1></h1>
+    <div class="services-tab">
+      <p class="services-tab__header">Здесь можно оплатить</p>
+      <ul class="services-tab__list">
+        <li class="services-tab__litem">
+          <a href="#traffic-fine">Штрафы и пошлины ГИБДД</a>
+        </li>
+        <li class="services-tab__litem">
+          <a href="#judical">Судебные задолженности</a>
+        </li>
+        <li class="services-tab__litem">
+          <a href="#tax">Налоги</a>
+        </li>
+        <li class="services-tab__litem">
+          <a href="#regisry">Услуги Росреестра</a>
+        </li>
+        <li class="services-tab__litem">
+          и другие услуги
+        </li>
+      </ul>
+    </div>
+    <section class="services traffic-fine" id="traffic-fine">
+      <div class="services__container">
+        <div class="services__col">
+          <svg width="33" height="36">
+            <use xlink:href="img/sprite.svg#fine"></use>
+          </svg>
+          <h2 class="services__title">Штрафы ГИБДД</h2>
+          <div class="services__descr">
+            <p>Для поиска укажите номера водительского удостоверения и свидетельства о регистрации ТС или номер штрафа.</p>
+            <p>Если у вас есть на руках постановление о штрафе, вы можете указать реквизиты самостоятельно.</p>
+            <p class="services__descr-attention">платить вовремя — дешевле!</p>
+            <p>В первые 20 дней после выдачи постановления штраф можно оплатить со скидкой 50%.  Для своевременной оплаты штрафов настройте уведомления в Личном кабинете.</p>
+          </div>
+        </div>
+        <div class="services__img-wrap">
+          <img src="img/gbdd.jpg" alt="Штрафы ГИБДД" width="309" height="285">
+        </div>
+      </div>
+    </section>
+    <section class="services traffic-duty">
+      <div class="services__container">
+        <div class="services__col">
+          <svg width="30" height="27">
+            <use xlink:href="img/sprite.svg#duty"></use>
+          </svg>
+          <h2 class="services__title traffic-duty__title"><a href="#">Пошлины ГИБДД</a></h2>
+          <div class="services__descr">
+            <p>Перейдите по ссылке и укажите вид пошлины и отделение ГИБДД, предоставляющее вам услугу.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="services judical" id="judical">
+      <div class="services__container">
+        <div class="sevices__col">
+          <svg width="39" height="34">
+            <use xlink:href="img/sprite.svg#judical"></use>
+          </svg>
+          <h2 class="services__title">Судебные задолженности</h2>
+          <div class="services__descr">
+            <p>Для поиска начислений в ГИС ГМП укажите документы:
+  паспорт РФ, ИНН, СНИЛС или номер Исполнительного производства</p>
+            <p>Вы можете указать реквизиты платежа самостоятельно, заполнив форму.</p>
+            <p class="services__descr-attention">Удобно!</p>
+            <p>Судебные задолженности можно погасить как сразу, так и по частям, комфортными для вас платежами. Информацию о совершенных платежах сохраняйте в Личном кабинете.</p>
+          </div>
+        </div>
+        <div class="services__img-wrap">
+          <img src="img/judical.jpg" alt="Судебные задолженности" width="309" height="285">
+        </div>
+      </div>
+    </section>
+    <section class="services tax">
+      <div class="services__container" id="tax">
+        <div class="sevices__col">
+          <svg width="34" height="36">
+            <use xlink:href="img/sprite.svg#tax"></use>
+          </svg>
+          <h2 class="services__title">Налоги</h2>
+          <div class="services__descr">
+            <p>Для поиска начислений по налогам в ГИС ГМП укажите ИНН или
+  Индекс налогового документа, усли у вас на руках есть квитанция.</p>
+            <p class="services__descr-attention">Важно!</p>
+            <p>Согласно законодательству РФ вы не можете оплачивать налоги за других физических лиц. Принимаются только платежи физических лиц.</p>
+          </div>
+        </div>
+        <div class="services__img-wrap">
+          <img src="img/tax.jpg" alt="Налоги" width="309" height="285">
+        </div>
+      </div>
+    </section>
+    <section class="services registy" id="regisry">
+      <div class="services__container">
+        <div class="sevices__col">
+          <svg width="33" height="37">
+            <use xlink:href="img/sprite.svg#registry"></use>
+          </svg>
+          <h2 class="services__title">Услуги Росреестра</h2>
+          <div class="services__descr">
+            <p>В поисковой строке укажите Код платежа, который был отправлен вам
+  на почтовый ящик, указанный при подаче запроса в Росреестре.</p>
+            <p class="services__descr-attention">нет кода?</p>
+            <p>Если у вас еще нет кода платежа, перейдите на сайт rosreestr.ru и сформируйте запрос на оплату электронных услуг Росреестра.</p>
+          </div>
+        </div>
+        <div class="services__img-wrap">
+          <img src="img/registry.jpg" alt="Услуги Росреестра" width="309" height="285">
+        </div>
+      </div>
+    </section>
     <section class="partners">
       <div class="partners__container">
         <p class="partners__header">С нами работают</p>
@@ -75,8 +186,59 @@
       </div>
     </section>
   </main>
-  <footer>
-
+  <footer class="page-footer">
+    <div class="page-footer__container">
+      <div class="page-footer__col">
+        <p>© 2012–2018</p>
+        <p>ООО «Название компании»</p>
+        <svg width="79" height="52">
+          <use xlink:href="img/sprite.svg#secure"></use>
+        </svg>
+      </div>
+      <div class="page-footer__col">
+        <div class="page-footer__nav footer-nav">
+          <ul class="page-footer__list">
+            <li class="footer-nav__item">
+              <a href="#">О сервисе</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#">Способы оплаты</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#">Как это работает</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#">Партнёрам</a>
+            </li>
+            <li class="footer-nav__item">
+              <a href="#">Статьи и новости</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-footer__col">
+        <div class="page-footer__contacts footer-contacts">
+          <ul class="footer-contacts__list">
+            <li class="footer-contacts__item">
+              <a href="tel:+78001234567">8 800 123 4567</a>
+              <p>звонок по России бесплатный</p>
+            </li>
+            <li class="footer-contacts__item">
+              <a href="#">Обратная связь</a>
+            </li>
+            <li class="footer-contacts__item">
+              <a href="#">Мы вКонтакте</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-footer__col">
+        <p>Дополнительные ссылки и копирайты ООО "Фирма 2"</p>
+        <svg width="98" height="34">
+          <use xlink:href="img/sprite.svg#firma"></use>
+        </svg>
+      </div>
+    </div>
   </footer>
 </body>
 </html>
