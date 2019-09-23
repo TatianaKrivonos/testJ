@@ -1,0 +1,78 @@
+.services {
+  border-bottom: 1px solid $gray;
+
+  @media (min-width: $screen-lg) {
+    padding: 75px 0;
+  }
+
+  &__container {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+
+    @media (min-width: $screen-md) {
+      width: 760px;
+      padding: 0;
+    }
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      width: 960px;
+    }
+
+    svg {
+
+      @media (min-width: $screen-lg) {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    display: inline-block;
+    font-size: 18px;
+    color: $main-color;
+    border-bottom: 1px dotted $main-color;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 30px;
+      font-size: 24px;
+      color: #000;
+      border-bottom: 0;
+    }
+
+    a {
+      font-size: 18px;
+      color: $main-color;
+      text-decoration: underline;
+
+      @media (min-width: $screen-lg) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__descr {
+    font-size: 15px;
+
+    p {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__descr-attention {
+    font-size: 12px;
+    font-weight: 700;
+    color: $attention-color;
+    text-transform: uppercase;
+  }
+
+  &__img-wrap {
+    display: none;
+
+    @media (min-width: $screen-lg) {
+      display: block;
+      background-color: $main-color;
+    }
+  }
+}

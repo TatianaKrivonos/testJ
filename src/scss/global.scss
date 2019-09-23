@@ -24,7 +24,7 @@ a {
 }
 
 img {
-  max-width: 100%;
+  min-width: 100%;
   min-height: 1px;
   height: auto;
 }
@@ -42,4 +42,5 @@ h1,
 h2,
 h3 {
   margin: 0;
+  font-weight: normal;
 }
