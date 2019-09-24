@@ -1,0 +1,41 @@
+.header-nav {
+
+  &__list {
+    display: none;
+
+    &--open {
+      position: absolute;
+      top: 55px;
+      left: 0;
+      display: block;
+      width: 100%;
+      background-color: #fff;
+    }
+  }
+
+  &__item {
+    padding: 12px 20px;
+
+    a {
+      font-size: 15px;
+      color: $main-color;
+      text-decoration: underline;
+    }
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 12px 0;
+    font-size: 15px;
+    color: $main-color;
+    background-color: transparent;
+    border: 2px solid $main-color;
+  }
+
+  &__toggle {
+
+    @media (min-width: $screen-lg) {
+     display: none;
+    }
+  }
+}
