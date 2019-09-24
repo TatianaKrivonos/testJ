@@ -1,0 +1,41 @@
+.search {
+  padding: 50px 0 75px;
+  background-image: url(../img/search-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: $main-color;
+
+  &__container {
+    padding: 0 15px;
+    width: 100%;
+
+    @media (min-width: $screen-lg) {
+      margin: 0 auto;
+      padding: 0;
+      width: 960px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 25px;
+    font-size: 21px;
+    color: #fff;
+    text-align: center;
+    text-shadow: 3px 3px 5px #000;
+
+    @media (min-width: $screen-lg) {
+      text-align: left;
+      font-size: 36px;
+    }
+
+    &--desktop {
+      display: none;
+
+      @media (min-width: $screen-lg) {
+        display: block;
+        font-size: 15px;
+        text-shadow: none;
+      }
+    }
+  }
+}

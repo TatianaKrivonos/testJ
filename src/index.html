@@ -34,12 +34,17 @@
     <h1></h1>
     <section class="search">
       <div class="search__container">
-        <form>
-          <p>Поиск начислений</p>
-          <input type="search" placeholder="Введите данные для поиска">
-          <input type="submit" value="Найти">
-          <p>Чем больше параметров введено, тем полнее результаты поиска</p>
+        <p class="search__text">Поиск начислений</p>
+        <form class="search__form search-form" name="search-form">
+          <input type="search" placeholder="Введите данные для поиска" class="search-form__input">
+          <button type="submit" class="search-form__btn">
+            <svg width="22" height="22">
+              <use xlink:href="img/sprite.svg#search-icon"></use>
+            </svg>
+            <span>Найти</span>
+          </button>
         </form>
+        <p class="search__text search__text--desktop">Чем больше параметров введено, тем полнее результаты поиска</p>
       </div>
     </section>
     <div class="services-tab">
