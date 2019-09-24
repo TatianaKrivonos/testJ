@@ -1,6 +1,13 @@
 .services {
   border-bottom: 1px solid $gray;
 
+  &:nth-child(3n+1) {
+
+    .services__img-wrap {
+      order: 1;
+    }
+  }
+
   @media (min-width: $screen-lg) {
     padding: 75px 0;
   }
