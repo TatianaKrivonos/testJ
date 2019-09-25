@@ -1,0 +1,12 @@
+.footer-nav {
+
+  &__item {
+    margin-bottom: 15px;
+
+    a {
+      font-size: 15px;
+      color: $main-color;
+      text-decoration: underline;
+    }
+  }
+}
