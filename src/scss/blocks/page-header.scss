@@ -1,14 +1,27 @@
 .page-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
   height: 55px;
+  background-color: #fff;
+
+  @media (min-width: $screen-lg) {
+    height: 67px;
+  }
 
   &__container {
-    position: fixed;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 12px 15px;
-    background-color: #fff;
     width: 100%;
+
+    @media (min-width: $screen-lg) {
+      margin: 0 auto;
+      width: 1240px;
+    }
   }
 
   &__logo {
@@ -24,5 +37,21 @@
 
   &__btn {
     display: none;
+
+    @media (min-width: $screen-lg) {
+      display: block;
+      color: $main-color;
+      background-color: transparent;
+    }
+
+    &--login {
+      width: 93px;
+      height: 36px;
+      border: 2px solid $main-color;
+    }
+
+    &--help {
+      border: 0;
+    }
   }
 }
