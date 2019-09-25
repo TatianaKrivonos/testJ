@@ -13,7 +13,7 @@
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-template-areas: 'block1  block3  block4  block5'
                            'block2  block3  block4  block5';
-      align-items: start;
+
       margin: 0 auto;
       padding: 47px 0 38px;
       width: 1210px;
@@ -26,6 +26,7 @@
 
     @media (min-width: $screen-lg) {
       flex-direction: column;
+      align-self: start;
     }
 
     p {
@@ -43,6 +44,14 @@
 
       &:last-child {
         margin-right: 0;
+      }
+    }
+
+    &--desktop {
+      display: none;
+
+      @media (min-width: $screen-lg) {
+        display: block;
       }
     }
 
