@@ -3,7 +3,7 @@
 
   &:nth-child(3n+1) {
 
-    .services__img-wrap {
+    .services__col-img {
       order: 1;
     }
   }
@@ -23,9 +23,21 @@
     }
 
     @media (min-width: $screen-lg) {
-      display: flex;
       width: 960px;
     }
+  }
+
+  &__row {
+
+    @media (min-width: $screen-lg) {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 -10.5px;
+    }
+  }
+
+  &__col {
+    padding: 0 10.5px;
 
     svg {
 
@@ -57,12 +69,28 @@
         font-size: 24px;
       }
     }
+
+    &--desktop {
+      display: none;
+
+      @media (min-width: $screen-lg) {
+        display: block;
+      }
+    }
   }
 
   &__descr {
 
     p {
       margin-bottom: 20px;
+    }
+
+    &--desktop {
+      display: none;
+
+      @media (min-width: $screen-lg) {
+        display: block;
+      }
     }
   }
 
