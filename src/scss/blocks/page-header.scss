@@ -19,7 +19,9 @@
     width: 100%;
 
     @media (min-width: $screen-lg) {
+      position: relative;
       margin: 0 auto;
+      padding: 12px 0;
       width: 1240px;
     }
   }
@@ -42,6 +44,7 @@
       display: block;
       color: $main-color;
       background-color: transparent;
+      cursor: pointer;
     }
 
     &--login {
@@ -52,6 +55,7 @@
 
     &--help {
       border: 0;
+      outline: 0;
     }
   }
 }

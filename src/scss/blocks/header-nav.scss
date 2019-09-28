@@ -1,24 +1,70 @@
 .header-nav {
 
   &__list {
-    display: none;
 
-    &--open {
-      position: absolute;
-      top: 55px;
-      left: 0;
-      display: block;
+    @media (min-width: $screen-lg) {
+      position: relative;
       width: 100%;
+      height: 100%;
+      padding: 10px 4px;
       background-color: #fff;
     }
   }
 
+  &__wrap {
+    display: none;
+
+    &--open {
+      display: block;
+      position: absolute;
+      top: 55px;
+      left: 0;
+      padding: 8px;
+      width: 100%;
+      background-color: #fff;
+
+      @media (min-width: $screen-lg) {
+        right: 0;
+        left: auto;
+        padding: 0;
+        width: 237px;
+        box-shadow: 1px 1px 4px $gray-darker;
+      }
+
+      &::before {
+
+        @media (min-width: $screen-lg) {
+          display: block;
+          content: '';
+          position: absolute;
+          right: 30px;
+          top: -25px;
+          background: #fff;
+          border: 7px solid transparent;
+          transform: rotate(45deg) translateX(15px) translateY(15px);
+          box-shadow: 1px 1px 4px $gray-darker;
+        }
+      }
+    }
+  }
+
   &__item {
-    padding: 12px 20px;
+    padding: 12px 17px;
 
     a {
       color: $main-color;
       text-decoration: underline;
+    }
+
+    &:hover {
+      background-color: $gray-lighter;
+    }
+
+    &--mobile {
+
+      @media (min-width: $screen-lg) {
+       display: none;
+      }
     }
   }
 
@@ -30,7 +76,7 @@
     border: 2px solid $main-color;
 
     @media (min-width: $screen-lg) {
-      display: none;
+     display: none;
     }
   }
 
