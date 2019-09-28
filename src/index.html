@@ -18,7 +18,7 @@
         </svg>
       </a>
       <div class="page-header__nav header-nav">
-        <div class="header-nav__wrap">
+        <div class="header-nav__wrap" id="menuList">
           <ul class="header-nav__list">
             <li class="header-nav__item">
               <a href="#">Как это работает</a>
@@ -90,10 +90,12 @@
             </div>
           </div>
           <div class="services__col">
-            <svg width="33" height="36">
-              <use xlink:href="img/sprite.svg#services-icon-fine"></use>
-            </svg>
-            <h2 class="services__title">Штрафы ГИБДД</h2>
+            <div class="services__header">
+              <svg width="33" height="36">
+                <use xlink:href="img/sprite.svg#services-icon-fine"></use>
+              </svg>
+              <h2 class="services__title">Штрафы ГИБДД</h2>
+            </div>
             <div class="services__descr">
               <p>Для поиска укажите номера водительского удостоверения и свидетельства о регистрации ТС или номер штрафа.</p>
               <p>Если у вас есть на руках постановление о штрафе, вы можете указать реквизиты самостоятельно.</p>
@@ -109,10 +111,12 @@
     <section class="services traffic-duty">
       <div class="services__container">
         <div class="services__col">
-          <svg width="30" height="27">
-            <use xlink:href="img/sprite.svg#services-icon-duty"></use>
-          </svg>
-          <h2 class="services__title traffic-duty__title"><a href="#">Пошлины ГИБДД</a></h2>
+          <div class="services__header">
+            <svg width="30" height="27">
+              <use xlink:href="img/sprite.svg#services-icon-duty"></use>
+            </svg>
+            <h2 class="services__title traffic-duty__title"><a href="#">Пошлины ГИБДД</a></h2>
+          </div>
           <div class="services__descr">
             <p>Перейдите по ссылке и укажите вид пошлины и отделение ГИБДД, предоставляющее вам услугу.</p>
           </div>
@@ -129,10 +133,12 @@
             </div>
           </div>
           <div class="services__col">
-            <svg width="39" height="34">
-              <use xlink:href="img/sprite.svg#services-icon-judicial"></use>
-            </svg>
-            <h2 class="services__title">Судебные задолженности</h2>
+            <div class="services__header">
+              <svg width="39" height="34">
+                <use xlink:href="img/sprite.svg#services-icon-judicial"></use>
+              </svg>
+              <h2 class="services__title">Судебные задолженности</h2>
+            </div>
             <div class="services__descr">
               <p>Для поиска начислений в ГИС ГМП укажите документы:
     паспорт РФ, ИНН, СНИЛС или номер Исполнительного производства</p>
@@ -154,10 +160,12 @@
             </div>
           </div>
           <div class="services__col">
-            <svg width="34" height="36">
-              <use xlink:href="img/sprite.svg#services-icon-tax"></use>
-            </svg>
-            <h2 class="services__title">Налоги</h2>
+            <div class="services__header">
+              <svg width="34" height="36">
+                <use xlink:href="img/sprite.svg#services-icon-tax"></use>
+              </svg>
+              <h2 class="services__title">Налоги</h2>
+            </div>
             <div class="services__descr">
               <p>Для поиска начислений по налогам в ГИС ГМП укажите ИНН или
     Индекс налогового документа, усли у вас на руках есть квитанция.</p>
@@ -178,10 +186,12 @@
             </div>
           </div>
           <div class="services__col">
-            <svg width="33" height="37">
-              <use xlink:href="img/sprite.svg#services-icon-registry"></use>
-            </svg>
-            <h2 class="services__title">Услуги Росреестра</h2>
+            <div class="services__header">
+              <svg width="33" height="37">
+                <use xlink:href="img/sprite.svg#services-icon-registry"></use>
+              </svg>
+              <h2 class="services__title">Услуги Росреестра</h2>
+            </div>
             <div class="services__descr">
               <p>В поисковой строке укажите Код платежа, который был отправлен вам
     на почтовый ящик, указанный при подаче запроса в Росреестре.</p>
@@ -292,5 +302,6 @@
       </div>
     </div>
   </footer>
+  <script src="js/script.min.js"></script>
 </body>
 </html>

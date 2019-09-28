@@ -1,5 +1,6 @@
 .toggle {
   position: relative;
+  padding: 0;
   border: 0;
   outline: 0;
   max-height: 15px;
@@ -8,7 +9,7 @@
 
   span {
     display: inline-block;
-    margin-bottom: 6px;
+    margin-bottom: 5px;
     width: 19px;
     height: 3px;
     background-color: $main-color;
@@ -29,6 +30,28 @@
 
     &:before {
       bottom: 0;
+    }
+  }
+
+  &--close {
+    width: 17px;
+    min-height: 17px;
+
+    span {
+      width: 0;
+      background-color: #fff;
+
+      &:before {
+        top: 6px;
+        right: -1px;
+        transform: rotate(45deg);
+      }
+
+      &:after {
+        top: 6px;
+        left: -1px;
+        transform: rotate(-45deg);
+      }
     }
   }
 }

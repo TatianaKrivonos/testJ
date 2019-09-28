@@ -15,7 +15,7 @@
   &__container {
     margin: 0 auto;
     width: 100%;
-    padding: 0 15px;
+    padding: 20px 15px;
 
     @media (min-width: $screen-md) {
       width: 760px;
@@ -37,14 +37,41 @@
   }
 
   &__col {
-    padding: 0 20px;
+
+    @media (min-width: $screen-lg) {
+      padding: 0 20px;
+    }
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-left: 5px;
+
+    @media (min-width: $screen-lg) {
+      margin-bottom: 0;
+      padding-left: 0;
+    }
 
     svg {
+      margin-right: 15px;
 
       @media (min-width: $screen-lg) {
         display: none;
       }
     }
+
+     &::after {
+      position: absolute;
+      right: 0;
+      display: block;
+      content: '';
+      width: 8px;
+      height: 7px;
+      background-image: url(../img/triangle.png);
+     }
   }
 
   &__img-wrap {
@@ -88,10 +115,10 @@
     a {
       font-size: 18px;
       color: $main-color;
-      text-decoration: underline;
 
       @media (min-width: $screen-lg) {
         font-size: 24px;
+        text-decoration: underline;
       }
     }
 
