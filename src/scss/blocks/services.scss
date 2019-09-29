@@ -15,7 +15,7 @@
   &__container {
     margin: 0 auto;
     width: 100%;
-    padding: 20px 15px;
+    padding: 0 15px;
 
     @media (min-width: $screen-md) {
       width: 760px;
@@ -48,31 +48,50 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    padding-left: 5px;
+    padding: 10px 0 10px 5px;
 
     @media (min-width: $screen-lg) {
       margin-bottom: 0;
-      padding-left: 0;
+      padding: 0;
     }
 
     svg {
-      margin-right: 15px;
+
+      &:first-child {
+        margin-right: 15px;
+      }
+
+      &:last-child {
+        margin-left: auto;
+        fill: $main-color;
+      }
 
       @media (min-width: $screen-lg) {
         display: none;
       }
     }
 
-     &::after {
-      position: absolute;
-      right: 0;
-      display: block;
-      content: '';
-      width: 8px;
-      height: 7px;
-      background-image: url(../img/triangle.png);
-     }
+    // &::after {
+    //   position: absolute;
+    //   right: 0;
+    //   display: block;
+    //   content: '';
+    //   width: 8px;
+    //   height: 7px;
+    //   background-image: url(../img/triangle.png);
+
+    //   @media (min-width: $screen-lg) {
+    //     display: none;
+    //   }
+    // }
   }
+
+  &__arrow {
+
+      &--active {
+        transform: rotate(180deg);
+      }
+    }
 
   &__img-wrap {
     display: none;
@@ -132,6 +151,11 @@
   }
 
   &__descr {
+    display: none;
+
+    @media (min-width: $screen-lg) {
+      display: block;
+    }
 
     p {
       margin-bottom: 20px;
@@ -143,6 +167,10 @@
       @media (min-width: $screen-lg) {
         display: block;
       }
+    }
+
+    &--active {
+      display: block;
     }
   }
 
