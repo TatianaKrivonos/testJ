@@ -1,5 +1,17 @@
 .header-nav {
 
+  @media (min-width: $screen-lg) {
+    position: relative;
+    display: inline-block;
+  }
+
+  &:hover .header-nav__wrap {
+
+    @media (min-width: $screen-lg) {
+      display: block;
+    }
+  }
+
   &__list {
 
     @media (min-width: $screen-lg) {
@@ -13,6 +25,12 @@
 
   &__wrap {
     display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    padding: 8px;
+    width: 100%;
+    background-color: #fff;
 
     &--open {
       display: block;
@@ -22,28 +40,30 @@
       padding: 8px;
       width: 100%;
       background-color: #fff;
+    }
+
+    @media (min-width: $screen-lg) {
+      top: 25px;
+      right: 0;
+      left: auto;
+      margin-top: 5px;
+      padding: 0;
+      width: 237px;
+      box-shadow: 1px 1px 10px $gray-darker;
+    }
+
+    &::before {
 
       @media (min-width: $screen-lg) {
-        right: 0;
-        left: auto;
-        padding: 0;
-        width: 237px;
-        box-shadow: 1px 1px 4px $gray-darker;
-      }
-
-      &::before {
-
-        @media (min-width: $screen-lg) {
-          display: block;
-          content: '';
-          position: absolute;
-          right: 30px;
-          top: -25px;
-          background: #fff;
-          border: 7px solid transparent;
-          transform: rotate(45deg) translateX(15px) translateY(15px);
-          box-shadow: 1px 1px 4px $gray-darker;
-        }
+        display: block;
+        content: '';
+        position: absolute;
+        right: 30px;
+        top: -25px;
+        background: #fff;
+        border: 7px solid transparent;
+        transform: rotate(45deg) translateX(15px) translateY(15px);
+        box-shadow: 1px 1px 10px $gray-darker;
       }
     }
   }
