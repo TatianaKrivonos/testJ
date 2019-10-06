@@ -9,6 +9,23 @@
   <script>svg4everybody()</script>
 </head>
 <body>
+   <div class="modal-enter">
+      <div class="modal-enter__wrap">
+        <form name="enter" class="modal-enter__form">
+          <p>Введите логин и пароль для входа в Личный кабинет</p>
+          <input type="text" placeholder="Логин" class="modal-enter__input">
+          <input type="password" placeholder="Пароль" class="modal-enter__input">
+          <input type="button" value="Войти" class="modal-enter__btn">
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Регистрация</a>
+          <button class="close-btn">
+            <svg width="21" height="21">
+              <use xlink:href="img/sprite.svg#close-btn"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
   <header class="page-header">
     <div class="page-header__container">
       <button class="page-header__btn page-header__btn--login">Войти</button>
