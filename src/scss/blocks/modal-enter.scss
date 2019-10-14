@@ -1,5 +1,5 @@
 .modal-enter {
-  // display: none;
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -7,6 +7,10 @@
   bottom: 0;
   z-index: 50;
   background-color: rgba(0, 0, 0, .9);
+
+  &--open {
+    display: block;
+  }
 
   &__wrap {
     position: relative;
@@ -33,14 +37,13 @@
     }
 
     a {
-      display: inline-block;
       width: fit-content;
       margin-bottom: 30px;
       font-size: 15px;
       color: $main-color;
       border-bottom: 1px dotted $main-color;
 
-      &:last-child {
+      &:nth-child(6) {
         margin-bottom: 0;
       }
     }

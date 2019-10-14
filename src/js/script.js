@@ -23,3 +23,22 @@ clickArea.forEach(function(area){
   };
 });
 
+/*модальное окно*/
+
+let modal = document.querySelector('#modal');
+let closeBtn = document.querySelector('#modal-close-btn');
+let enterBtn = document.querySelector('.page-header__btn--login');
+
+enterBtn.addEventListener('click', modalVisible);
+function modalVisible(e) {
+  e.preventDefault();
+  modal.classList.add('modal-enter--open');
+}
+
+closeBtn.addEventListener('click', modalClose);
+function modalClose(e) {
+  e.preventDefault();
+  modal.classList.remove('modal-enter--open');
+}
+
+

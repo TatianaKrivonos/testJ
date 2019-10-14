@@ -9,7 +9,7 @@
   <script>svg4everybody()</script>
 </head>
 <body>
-   <div class="modal-enter">
+   <div class="modal-enter" id="modal">
       <div class="modal-enter__wrap">
         <form name="enter" class="modal-enter__form">
           <p>Введите логин и пароль для входа в Личный кабинет</p>
@@ -18,7 +18,7 @@
           <input type="button" value="Войти" class="modal-enter__btn">
           <a href="#">Забыли пароль?</a>
           <a href="#">Регистрация</a>
-          <button class="close-btn">
+          <button class="close-btn" id="modal-close-btn">
             <svg width="21" height="21">
               <use xlink:href="img/sprite.svg#close-btn"></use>
             </svg>
